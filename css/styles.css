@@ -63,18 +63,6 @@
                               height: auto;
                           }
                           
-                          .navlink .current::after {
-                              position: relative;
-                              width: 100%;
-                              height: 4px;
-                              border-radius: 4px;
-                              color: var(--thirty-cl);
-                          }
-                          
-                          .navlink .current {
-                              color: var(--thirty-txt-cl);
-                          }
-                          
                           .container {
                               width: 1200px;
                               margin-left: auto;
@@ -116,7 +104,7 @@
                               margin-left: 93px;
                           }
                           
-                          .navlink a {
+                          .navlink {
                               display: block;
                               font-weight: 500;
                               font-size: 14px;
@@ -124,10 +112,10 @@
                               letter-spacing: 0.02em;
                               color: var(--main-txt-cl);
                               transition: color var(--anim-slow), background-color var(--anim-slow);
+                              padding: 32px 0;
                           }
                           
                           .navlink {
-                              padding: 32px 0;
                               margin-right: 50px;
                           }
                           
@@ -139,7 +127,21 @@
                           .navlink a:focus {
                               color: var(--thirty-txt-cl);
                           }
-                          
+                          .current {
+                              position: relative;
+                              color: var(--thirty-txt-cl);
+                          }
+
+                          .current::after {
+                              content: "";
+                              position: absolute;
+                              width: 100%;
+                              height: 4px;
+                              border-radius: 4px;
+                              background: var(--thirty-cl);
+                              left: 0;
+                              bottom: 0;
+                          }
                           .contacts {
                               display: flex;
                               margin-left: auto;
