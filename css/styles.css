@@ -115,11 +115,11 @@
                               padding: 32px 0;
                           }
                           
-                          .navlink {
+                          .nav-link {
                               margin-right: 50px;
                           }
                           
-                          .navlink:last-child {
+                          .nav-link:last-child {
                               margin-right: 0;
                           }
                           
