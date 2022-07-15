@@ -693,13 +693,14 @@
                           
                           .photo-project {
                               overflow: hidden;
+                              position:relative;
                           }
                           
                           .desc {
                               position: absolute;
                               left: 0;
                               top: 0;
-                              transform: translateY(100%);
+                              transform: translateY(102%);
                               display: flex;
                               align-items: center;
                               justify-content: center;
